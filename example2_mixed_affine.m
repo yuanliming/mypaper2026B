@@ -157,7 +157,7 @@ for p = 1:2
 
     grid on; box on;
     xlim([2e-2 2]); ylim([2 3.2]);
-    set(ax,'FontName','Times New Roman','FontSize',8,'LineWidth',0.8);
+    set(ax, 'FontSize',8, 'LineWidth',0.8, 'TickLabelInterpreter','latex');
 
     title(sprintf('$\\tau = %.1f$',tau_plot(p)),'Interpreter','latex');
     ylabel('$\gamma$','Interpreter','latex');
