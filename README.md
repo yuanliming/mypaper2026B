@@ -1,4 +1,4 @@
-# Structure Transport for Factorized Controller Synthesis under Linear Equality Constraints
+# Structure Transport in Factorized Controller Synthesis under Linear Equality Constraints
 
 MATLAB code for the numerical examples in the manuscript:
 
@@ -54,8 +54,8 @@ It compares:
 On the machine listed above, the run reported in the paper gave approximately
 
 ```text
-Direct grid search  : 9.6752 s
-Proposed screening  : 0.1602 s
+Direct grid search  : 10.1135 s
+Proposed screening  : 0.1226 s
 ```
 
 ### `example2_mixed_affine.m`
@@ -96,4 +96,4 @@ Representative results are
 
 The numerical values can vary slightly with solver tolerances, operating system, and software versions. 
 
-
+example1_corollary1.m and example1_corollary1.m are independent implementation based on the fixed-coefficient equalities of Corollary 1, which yields consistent results.
