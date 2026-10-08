@@ -25,7 +25,7 @@ N2 = [0 0 1; 0 -2 0];
 
 fprintf('Open-loop spectral abscissa = %.4f\n',max(real(eig(A))));
 
-%% Candidate library in (56)
+%% Candidate library in (55)
 Fb = diag([1 1 2]);
 E12 = [0 1 0; 0 0 0; 0 0 0];
 E23 = [0 0 0; 0 0 1; 0 0 0];
