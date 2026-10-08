@@ -45,12 +45,9 @@ N12 = N(1:2,4:6);
 N22 = N(3:4,4:6);
 
 M = A'*Q;
-M11 = M(1:3,1:3);
-M22 = M(4:6,4:6);
+S = M(1:3,1:3) + M(4:6,4:6);
 
-con = [Q >= 0, trace(Q) == 1, ...
-       N11 + N12 + N22 == 0, ...
-       M11 + M22 >= 0];
+con = [Q >= 0, trace(Q) == 1, N11 + N12 + N22 == 0, S == S', (S + S')/2 >= 0];
 
 sol = optimize(con,[],opt);
 t_screen = toc;
@@ -74,8 +71,7 @@ g  = sdpvar(1);
 X = [X0 zeros(3); zeros(3) X0];
 R = [R0 R0; zeros(2,3) R0];
 
-Q = [A*X-B2*R; -X; C*X-D*R] * ...
-    [eye(6) a*eye(6) zeros(6,10)];
+Q = [A*X-B2*R; -X; C*X-D*R] * [eye(6) a*eye(6) zeros(6,10)];
 
 M1 = -[zeros(6) P zeros(6,10);
        P zeros(6) zeros(6,10);
