@@ -2,7 +2,7 @@
 
 MATLAB code for the numerical examples in the manuscript:
 
-"Structure Transport for Factorized Controller Synthesis under Linear Equality Constraints."
+"Structure Transport in Factorized Controller Synthesis under Linear Equality Constraints."
 
 The scripts reproduce the numerical results, screening tests, and figures reported in the paper.
 
@@ -96,4 +96,4 @@ Representative results are
 
 The numerical values can vary slightly with solver tolerances, operating system, and software versions. 
 
-example1_corollary1.m and example1_corollary1.m are independent implementation based on the fixed-coefficient equalities of Corollary 1, which yields consistent results.
+The files example1_corollary1.m and example2_corollary1.m provide independent implementations of the fixed-coefficient equalities of Corollary 1. The former uses nullspace elimination by default, while the latter imposes the equalities directly in YALMIP. Both yield results consistent with the explicit fixed-slice parameterizations.
