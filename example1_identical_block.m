@@ -100,7 +100,7 @@ X0 = sdpvar(3,3,'full');
 R0 = sdpvar(2,3,'full');
 g  = sdpvar(1);
 
-% Non-self slice (48)
+% Non-self slice (47)
 X = [X0 -X0; zeros(3) X0];
 R = [R0 zeros(2,3); zeros(2,3) R0];
 
