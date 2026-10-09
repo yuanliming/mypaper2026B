@@ -13,7 +13,6 @@ The code was tested with:
 - MATLAB R2024a
 - YALMIP 20200116
 - SDPT3 4.0
-- Control System Toolbox
 
 Timing results reported in the paper were obtained on an Intel(R) Core(TM) Ultra 9 285H CPU at 2.90 GHz.
 
