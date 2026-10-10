@@ -36,12 +36,12 @@ Representative values reported in the paper are
 
 ```text
 alpha_best          = 0.9120
-gamma_best          = 126.4343
-realized H2^2       = 28.8544
+gamma_best          = 126.4345
+realized H2^2       = 28.8542
 spectral abscissa   = -0.4890
 ```
 
-### `example1_timing_screening_vs_no_screening.m`
+### `example1_timing.m`
 
 Reproduces the computational comparison for the self-transport slice.
 
@@ -53,8 +53,8 @@ It compares:
 On the machine listed above, the run reported in the paper gave approximately
 
 ```text
-Direct grid search  : 10.1135 s
-Proposed screening  : 0.1226 s
+Direct grid search  : 11.4623 s
+Proposed screening  : 0.1340 s
 ```
 
 ### `example2_mixed_affine.m`
