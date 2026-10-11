@@ -156,7 +156,14 @@ for p = 1:2
             'LineWidth',1.0,'MarkerSize',4);
     end
 
-    grid on; box on;
+    % Logarithmic alpha-axis
+    set(ax, 'XScale', 'log');
+    xlim(ax, [0.02 2]);
+    xticks(ax, [0.02 0.05 0.1 0.2 0.5 1 2]);
+    ylim(ax, [2 3.2]);
+    grid(ax, 'on');
+    
+    box on;
     xlim([2e-2 2]); ylim([2 3.2]);
     set(ax, 'FontSize',8, 'LineWidth',0.8, 'TickLabelInterpreter','latex');
     title(sprintf('$\\tau = %.1f$',tau_plot(p)),'Interpreter','latex');
@@ -172,10 +179,6 @@ lgd = legend(h,plot_labels, ...
     'NumColumns',3, ...
     'FontSize',8);
 lgd.Layout.Tile = 'south';
-
-% % Vector PDF for the manuscript and 300-dpi PNG for quick viewing.
-% exportgraphics(gcf,'example2_gamma_alpha.pdf','ContentType','vector');
-% exportgraphics(gcf,'example2_gamma_alpha.png','Resolution',300);
 
 %% ------------------------------------------------------------------------
 function status = certificate_test(F,A,B2,Kp,N1,N2,opt)
