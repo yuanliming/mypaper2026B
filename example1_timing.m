@@ -1,4 +1,4 @@
-%% example1_timing_screening_vs_no_screening.m
+%% example1_timing.m
 % Example 1: timing comparison for the self-transport slice.
 % No screening: solve 101 complete H2 synthesis SDPs.
 % Screening: solve one recovery-core certificate SDP (48).
